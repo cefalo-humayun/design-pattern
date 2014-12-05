@@ -124,8 +124,7 @@ class FactoryProducer {
 public class AbstractFactoryPatternDemo {
     public static void main(String[] args) {
         //get shape factory
-        AbstractFactory shapeFactory =
-        FactoryProducer.getFactory("SHAPE");
+        AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
 
         //get an object of Shape Circle
         Shape shape1 = shapeFactory.getShape("CIRCLE");
@@ -145,9 +144,11 @@ public class AbstractFactoryPatternDemo {
         //call draw method of Shape Square
         shape3.draw();
 
+
+
+
         //get color factory
-        AbstractFactory colorFactory =
-        FactoryProducer.getFactory("COLOR");
+        AbstractFactory colorFactory = FactoryProducer.getFactory("COLOR");
 
         //get an object of Color Red
         Color color1 = colorFactory.getColor("RED");
